@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:gravity="center"
+       android:layout_margin="5dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="130dp"
+           android:layout_height="150dp"
+           app:cardElevation="5dp"
+           android:id="@+id/addnotice"
+           android:layout_margin="10dp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:layout_width="64dp"
+                   android:padding="15dp"
+                   android:src="@drawable/ic_baseline_event_note_24"
+                   android:background="@drawable/cirlce_green"
+                   android:layout_height="64dp"/>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="10dp"
+                   android:background="@color/light_grey"
+                   android:layout_height="1dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Notice"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:padding="5dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/text_color"/>
+
+           </LinearLayout>
+
+
+       </com.google.android.material.card.MaterialCardView>
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="130dp"
+           android:layout_height="150dp"
+           app:cardElevation="5dp"
+           android:id="@+id/addGallery"
+           android:layout_margin="10dp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:layout_width="64dp"
+                   android:padding="15dp"
+                   android:src="@drawable/ic_baseline_galley_24"
+                   android:background="@drawable/circle_purple"
+                   android:layout_height="64dp"/>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="10dp"
+                   android:background="@color/light_grey"
+                   android:layout_height="1dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Gallery"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:padding="5dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="@color/text_color"/>
+
+           </LinearLayout>
+
+
+       </com.google.android.material.card.MaterialCardView>
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            app:cardElevation="5dp"
+            android:id="@+id/addEbook"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_baseline_upload_24"
+                    android:background="@drawable/circle_pink"
+                    android:layout_height="64dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_grey"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ebook"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_color"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            app:cardElevation="5dp"
+            android:id="@+id/addfaculaty"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_baseline_group_24"
+                    android:background="@drawable/circle_yelow"
+                    android:layout_height="64dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_grey"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_color"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            app:cardElevation="5dp"
+            android:id="@+id/adddelate"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    android:background="@drawable/circle_reed"
+                    android:layout_height="64dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_grey"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delate"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_color"/>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
