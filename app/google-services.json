@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1077860718351",
+    "project_id": "cpi-app-34132",
+    "storage_bucket": "cpi-app-34132.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077860718351:android:d3f9e09b97ceaa97f6507a",
+        "android_client_info": {
+          "package_name": "com.example.cpiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077860718351-149aq9dfuk07ofs2g3rupgb994djm4ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKb1L58qCO9MdtEOZYR1mDNRbgHsjyZ1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077860718351-149aq9dfuk07ofs2g3rupgb994djm4ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
