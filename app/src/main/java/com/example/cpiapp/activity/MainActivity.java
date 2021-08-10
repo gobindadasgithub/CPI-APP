@@ -1,4 +1,4 @@
-package com.example.cpiapp;
+package com.example.cpiapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -6,7 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Switch;
+
+import com.example.cpiapp.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     CardView UploadNotice;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        switch (v.getId()){
 
            case R.id.addnotice:
-               startActivity(new Intent(MainActivity.this,NoticeActivity.class));
+               startActivity(new Intent(MainActivity.this, NoticeActivity.class));
                break;
        }
 
