@@ -44,24 +44,26 @@ public class NoticeActivity extends AppCompatActivity {
     private EditText noticetTitle;
     private DatabaseReference reference;
     private  StorageReference storageReference;
-    private String downloadUrl;
+    private String downloadUrl="";
     private ProgressDialog progressDialog;
+    private CardView selectNoticeImage;
+    private Button noticeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notice);
-        CardView addimage = findViewById(R.id.addImage);
+       selectNoticeImage = findViewById(R.id.addImage);
         noticeimageView=findViewById(R.id.addNoticeImageView);
         noticetTitle=findViewById(R.id.addNoticeTitle);
-        Button noticeButton = findViewById(R.id.addNoticebutton);
+        noticeButton = findViewById(R.id.addNoticebutton);
 
         reference= FirebaseDatabase.getInstance().getReference();
         storageReference= FirebaseStorage.getInstance().getReference();
 
         progressDialog=new ProgressDialog(this );
 
-        addimage.setOnClickListener(new View.OnClickListener() {
+        selectNoticeImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openGalley();
