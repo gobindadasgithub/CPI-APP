@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">C P I App</string>
+    <string name="todo">TODO</string>
+    <string name="computer_science">Computer Science</string>
+    <string name="civil_technology">Civil Technology</string>
+    <string name="electriccal_technology">Electriccal Technology</string>
+    <string name="rac_technology">Rac Technology</string>
 </resources>

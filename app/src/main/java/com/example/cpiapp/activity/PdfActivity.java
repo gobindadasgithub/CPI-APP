@@ -1,24 +1,21 @@
 package com.example.cpiapp.activity;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.cpiapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -42,7 +39,7 @@ public class PdfActivity extends AppCompatActivity {
     private EditText pdftTitle;
     private DatabaseReference databasereference;
     private StorageReference storageReference;
-    private String downloadUrl="";
+    private final String downloadUrl="";
     private ProgressDialog progressDialog;
     private CardView selecPdfImage;
     private Button pdfbtn;

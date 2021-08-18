@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TeacherActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/teacherImageview"
+            android:layout_width="120dp"
+            android:src="@drawable/teacher1"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:layout_height="120dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/addTeacherName"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/addTeacherEmail"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/addTeacherPost"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:hint="Post" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Spinner
+            android:id="@+id/Spinner_Teacher"
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            android:gravity="center"
+            android:layout_marginVertical="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addteacherbutton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add Teacher"
+            android:textAllCaps="false" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

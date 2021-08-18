@@ -10,7 +10,7 @@ import android.view.View;
 import com.example.cpiapp.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    CardView UploadNotice,UploadImage,UploadEbook;
+    CardView UploadNotice,UploadImage,UploadEbook,UploadFaculaty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +19,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         UploadNotice=findViewById(R.id.addnotice);
         UploadImage=findViewById(R.id.addGallery);
         UploadEbook=findViewById(R.id.addEbook);
+        UploadFaculaty=findViewById(R.id.addfaculaty);
+
         UploadNotice.setOnClickListener(this);
         UploadImage.setOnClickListener(this);
         UploadEbook.setOnClickListener(this);
+        UploadFaculaty.setOnClickListener(this);
 
     }
 
@@ -39,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                break;
            case R.id.addEbook:
                startActivity(new Intent(MainActivity.this, PdfActivity.class));
+               break;
+           case R.id.addfaculaty:
+               startActivity(new Intent(MainActivity.this, UpdateActivity.class));
                break;
        }
 

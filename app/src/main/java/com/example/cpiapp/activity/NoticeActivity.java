@@ -42,7 +42,7 @@ public class NoticeActivity extends AppCompatActivity {
     private Bitmap bitmap;
     private ImageView noticeimageView;
     private EditText noticetTitle;
-    private DatabaseReference reference;
+    private DatabaseReference reference,dbRef;
     private  StorageReference storageReference;
     private String downloadUrl="";
     private ProgressDialog progressDialog;
@@ -93,8 +93,8 @@ public class NoticeActivity extends AppCompatActivity {
     private void UploadData() {
 
           String title=noticetTitle.getText().toString();
-        reference=reference.child("Notice");
-        final  String uniqueKey=reference.push().getKey();
+        dbRef=reference.child("Notice");
+        final  String uniqueKey=dbRef.push().getKey();
         Calendar calendardate=Calendar.getInstance();
         SimpleDateFormat currentDate=new SimpleDateFormat("dd//MM/yy");
         String date=currentDate.format(calendardate.getTime());
@@ -105,7 +105,7 @@ public class NoticeActivity extends AppCompatActivity {
 
 
         NoticeData noticeData=new NoticeData(title,downloadUrl,date,time,uniqueKey);
-        reference.child(uniqueKey).setValue(noticeData).addOnSuccessListener(new OnSuccessListener<Void>() {
+        dbRef.child(uniqueKey).setValue(noticeData).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 progressDialog.dismiss();

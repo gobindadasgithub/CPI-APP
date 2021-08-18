@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:paddingLeft="12dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/teachername"
+                    android:text="Dulal Roy"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/teacherepost"
+                    android:text="Instructor"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/teacheremail"
+                    android:text="gobindasoftware@gmail.com"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/teacher_btn"
+                    android:layout_width="100dp"
+                    android:text="Update Info"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_height="50dp"/>
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/teacher_image"
+                android:layout_width="80dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/teacher1"
+                android:layout_height="120dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
